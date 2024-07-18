@@ -1,0 +1,243 @@
+*{
+    font-family: "Roboto Slab", serif;
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;  
+}
+
+/* nav-bar */
+
+#video-section video{
+    padding-top: 0%;
+    margin-top: 0px;
+}
+.vdo{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 900px;
+
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    position: relative;
+    padding-top: 0%;
+}
+#logo{
+    width: 200px;
+    height: 150px;
+    margin-left: 3%;
+}
+.listItem{
+    list-style: none;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+li a{
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(196, 13, 141); 
+    font-weight: 600;
+}
+li a:hover{
+    color:rgb(236, 196, 224)
+}
+
+/* order */
+
+.heading{
+    text-align: center;
+    font-size: 50px;
+    color:rgb(155, 14, 113) ;
+}
+#order{
+    /* margin-top: 0%; */
+    padding-top: 40%;
+    background-color:rgb(95, 9, 69) ;
+    width: 100%;
+    height: 700px;
+}
+#order-position{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5px;
+}
+
+.img img{
+    width: 100%;
+    height:400px;
+}
+#order-position .img:hover{
+    transform: scale(1.1);
+    background-image: linear-gradient(to bottom right, rgb(196, 93, 179), rgb(111, 22, 64), rgb(181, 124, 168));
+}
+
+#btn {
+    text-align: center; 
+    margin-top: 20px;  
+}
+
+#btn a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgb(110, 3, 78);
+    color: white; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+#btn a:hover {
+    background-color:rgb(155, 14, 113) ; 
+}
+    
+
+/* menu */
+
+#menu{
+    background-color:   rgb(116, 16, 86);
+    color:rgb(72, 13, 52);
+    text-align: center;
+    padding-left: 5%;
+}
+#menu h1{
+    font-size: 50px;
+}
+#cards{
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+}
+#cards .card{
+    padding: 4px 4px;
+    width: 300px;
+    height: 500px;
+    transition: transform 0.3s ease, background-image 0.3s ease, border-radius 0.3s ease;
+}
+.card img{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+.card p{
+    text-align: justify;
+    color: aliceblue;
+}
+.card h2{
+    text-align: center;
+    font-weight: 900;
+}
+.card button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(237, 40, 135);
+    margin-top: 15px;
+}
+#cards .card:hover{
+    border-radius: 5px;
+    transform: scale(1.1);
+    background-image: linear-gradient(to bottom right, rgb(196, 93, 179), rgb(111, 22, 64), rgb(181, 124, 168));
+}
+
+
+
+/* about */
+#about-container{
+    margin-top: 0px;
+    background-color: rgb(95, 9, 69) ;
+    padding-top: 3%;
+}
+#about-container h1{
+    text-align: center;
+    font-size: 50px;
+    color:rgb(155, 14, 113);
+}
+#about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap:5px ;
+}
+#about-para p{
+    justify-content: center;
+    text-align: justify;
+    padding-right: 15px;
+    color: aliceblue;
+    padding-top: 100px;
+    padding-left: 5px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* contact */
+footer{
+    padding: 2.5rem 0px;
+    background-color:rgb(95, 9, 69) ;
+}
+#contact{
+    background-color: rgb(95, 9, 69);
+}
+#contact-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#contact h1{
+    margin-top: 0px;
+    background-color: rgb(95, 9, 69);
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    color:rgb(155, 14, 113);
+}
+#img-man img{
+    height: 300px;
+    width: 300px;
+    margin-left: 500px;
+}
+#contact-container #icons{
+    text-align: justify;   
+    margin-top: 5%;
+    padding-left: 5%;
+    margin-left: 200px;
+}
+#icons .icon{
+    color:rgb(237, 40, 135) ;
+}
+.icon i{
+    font-size: 25px;
+}
+.icon span{
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 8px;
+}
+
+footer p{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: aliceblue;
+}
+
+html{
+    scroll-behavior: smooth;
+}
